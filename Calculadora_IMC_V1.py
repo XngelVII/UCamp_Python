@@ -36,7 +36,7 @@ while True:
         try:
             altura = float(input("Introduce tu altura en metros: "))
             if altura <= 0:
-                print(f"Por favor ingresa una altura válido")
+                print(f"Por favor ingresa una altura válida")
             else:
                 break
         except ValueError:
@@ -46,23 +46,23 @@ while True:
 imc = float(peso/altura**2) 
 
 # Imprimir el resultado del calculo del IMC
-print(f"\n\n {nombre} {apellido_paterno} {apellido_materno} a tus {edad} años, tu IMC es: {imc : .2f} \n")
+print(f"\n\n{nombre} {apellido_paterno} {apellido_materno} a tus {edad} años, tu IMC es: {imc : .2f} \n")
 
 # Condicional para diferenciar en qué clasificación de IMC está el usuario
 # Coloqué 6 decimales ya que de otro modo en algunas ocasiones de saltaba un error
 if imc < 16:
-    print(f"Estás dentro de la clasificación de DELGADEZ SEVERA")
+    print(f"Estás dentro de la clasificación de DELGADEZ SEVERA\n")
 elif 16.0 <= imc <= 16.999999:
-    print(f"Estás dentro de la clasificación de DELGADEZ MODERADA")
+    print(f"Estás dentro de la clasificación de DELGADEZ MODERADA\n")
 elif 17.0 <= imc <= 18.4999999:
-    print(f"Estás dentro de la clasificación de DELGADEZ LEVE")
+    print(f"Estás dentro de la clasificación de DELGADEZ LEVE\n")
 elif 18.5 <= imc <= 24.999999:
-    print(f"Estás dentro de la clasificación de NÓRMAL")
+    print(f"Estás dentro de la clasificación NÓRMAL\n")
 elif 25.0 <= imc <= 29.999999:
-    print(f"Estás dentro de la clasificación de PRE OBESIDAD")
+    print(f"Estás dentro de la clasificación de PRE OBESIDAD\n")
 elif 30.0 <= imc <= 34.999999:
-    print(f"Estás dentro de la clasificación de OBESIDAD LEVE")
+    print(f"Estás dentro de la clasificación de OBESIDAD LEVE\n")
 elif 35.0 <= imc <= 39.999999:
-    print(f"Estás dentro de la clasificación de OBESIDAD MODERADA")
+    print(f"Estás dentro de la clasificación de OBESIDAD MODERADA\n")
 elif imc > 40.0:
-    print(f"Estás dentro de la clasificación de OBESIDAD MORBIDA")
+    print(f"Estás dentro de la clasificación de OBESIDAD MORBIDA\n")
