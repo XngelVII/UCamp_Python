@@ -16,18 +16,21 @@ numero_de_intentos = 3
 # Mientras el numero de intentos sea mayor que 0 seguira ejecutandose el bucle.
 while numero_de_intentos > 0:
     # Se le pide al usuario que escriba de nuevo su contrasña.
-    password_check = input("\nPor favor vuelve a introducir la CONTRASEÑA: ")
+    password_check = input(f"\nPor favor vuelve a introducir la CONTRASEÑA (tienes {numero_de_intentos} intentos): ")
     # Se compara ambas contraseñas introducidas por el usuario. Si son iguales da un mensaje de conrtaseña correcta.
     if password == password_check:
         print(f"\nCONTRASEÑA correcta.")
         break
     # Si las contraseñas no son iguales, da un mensaje pidiendole al usuario intentarlo de nuevo, y le menciona cuantos intentos le quedan.
     else:
-        print(f"\nCONTRASEÑA incorrecta. Por favor intentalo otra vez. \nTe quedan {numero_de_intentos} intentos")
         # Cada ejecucion incorrecta va reduciendo en uno en numero de intentos disponibles.
         numero_de_intentos -= 1
+        if numero_de_intentos > 1:
+            print(f"\nCONTRASEÑA incorrecta. Por favor intentalo otra vez. \nTe quedan {numero_de_intentos} intentos")
+        elif numero_de_intentos == 1:
+            print(f"\nCONTRASEÑA incorrecta. Por favor intentalo otra vez. \nTe queda {numero_de_intentos} intento")
         # Si se llegan a 0 intentos, se muestra un mensaje al usuario indicandole que ha excedido el numero de intentos y termina el programa.
-        if numero_de_intentos == 0:
+        elif numero_de_intentos == 0:
             print(f"\nLas CONTRASEÑAS no coinciden. \n\nHas excedido el número de intentos.")
         else:  
-                exit
+                exit()
