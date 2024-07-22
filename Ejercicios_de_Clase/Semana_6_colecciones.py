@@ -62,8 +62,9 @@ set_d = {1,9,"e","a"}
 print(f"Conjunto a:\n{set_a}\nConjunto b:\n{set_b}\nConjunto c:\n{set_c}\nConjunto d:\n{set_d}\n")
 
 print(f"Union entre conjuntos a,b,c,d: \n{ set_a | set_b | set_c | set_d }")
-print(f"Interseccion entre conjuntos a,b (solo funciona con dos conjuntos): \n{ set_a & set_d }")
 print(f"Diferencia conjuntos a,b,c,d: \n{ set_a - set_b - set_c - set_d }")
+print(f"Interseccion entre conjuntos a,d (solo funciona con dos conjuntos): \n{ set_a & set_d }")
+print(f"Diferencia simetrica conjuntos a,d (elementos que esten en uno de los dos conjuntos pero no en el otro): \n{ set_a ^ set_d }")
 
 lista_repetida = [1,1,1,1,1,1,2,2,2,2,5,5,5,5,5,5]
 print(f"\n\nElementos de la lista_repetida:\n{lista_repetida}\n\nConjunto de elementos unicos en la lista_repetida:\n{set(lista_repetida)}")
