@@ -1,5 +1,5 @@
 # Mensaje de bienvenida al usuario
-print(f"Hola, te ayudaré a saber en qué cuadrante se encuentran las coordenadas que me indiques\n\nPara salir ingresa los valores x = 0.0001 y y = 0.0001")
+print(f"Hola, te ayudaré a saber en qué cuadrante se encuentran las coordenadas que me indiques\n\nPara salir ingresa los valores x = 0.1 y y = 0.1")
 
 # while para que mientras "x" y "y" sean variables flotantes se ejecuten las condicionales.
 # Agregué un  en cada condicional ya que de otra manera el programa se iniciaba recursivamente luego de dar un primer resultado (pedia de nuevo valores para "x" y "y", daba un resultado y se reiniciaba)
