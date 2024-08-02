@@ -27,7 +27,7 @@ while alumnos < 30:
                 # Se agrega el nombre del alumno a la lista 
                 lista.append(nombre)
                 # Se agregan las calificaciones a una lista llamada calif_materias que posteriormente se agregan a la lista de calificaciones
-                calif_materias = [calificacion_1,calificacion_2,calificacion_3,calificacion_4,calificacion_5]
+                calif_materias = [abs(calificacion_1),abs(calificacion_2),abs(calificacion_3),abs(calificacion_4),abs(calificacion_5)]
                 calificaciones.append(calif_materias)
                 # Se incrementa por uno el numero de alumnos
                 alumnos += 1
