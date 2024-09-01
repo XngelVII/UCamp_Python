@@ -1,3 +1,27 @@
+# Definicion de un diccionario con todas las letras
+alfa = {
+"a" : 0,
+"b" : 1,
+"c" : 2,
+"d" : 3
+}
+
+print(alfa)
+
+print('Seleccion por clave')
+print(alfa["a"])
+print('Seleccion por llaves')
+print(alfa.keys())
+print('Seleccion por elementos (muestra llaves y valores)')
+print(alfa.items())
+print('Seleccion por valores')
+print(alfa.values())
+
+
+
+
+
+
 # Una Función es un bloque de cópdigo que realiza una tera especifica y puede ser reutilizado en diferentes partes de un programa
 # -reutilizacion de codigo
 # -modularidad y irganizacion
@@ -67,6 +91,6 @@ def saludo_al_reves(nombre='mundo'):
 def mayusculas(palabra):
     print(palabra.upper())
 
-linea =  saludo_al_reves('Hola Miguel Angel Tapia Hernandez')
+linea =  saludo_al_reves('Hola querido usuario')
 print(linea)
 mayusculas(linea)
